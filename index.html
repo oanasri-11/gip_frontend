@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <header class="calculator-header">
+      <h1>calc</h1>
+      <div class="theme-control">
+        <span class="theme-label">THEME</span>
+        <div class="theme-switch" aria-label="Theme selector">
+          <span class="theme-numbers" aria-hidden="true"><span>1</span><span>2</span><span>3</span></span>
+          <button class="theme-track" type="button" aria-label="Toggle theme" title="Theme selector">
+            <span class="theme-knob"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <output class="display" id="display" aria-live="polite">0</output>
+
+    <section class="keypad" aria-label="Calculator keys">
+      <button class="key key-number" data-action="number" data-value="7">7</button>
+      <button class="key key-number" data-action="number" data-value="8">8</button>
+      <button class="key key-number" data-action="number" data-value="9">9</button>
+      <button class="key key-action" data-action="delete">DEL</button>
+
+      <button class="key key-number" data-action="number" data-value="4">4</button>
+      <button class="key key-number" data-action="number" data-value="5">5</button>
+      <button class="key key-number" data-action="number" data-value="6">6</button>
+      <button class="key key-operator" data-action="operator" data-value="+">+</button>
+
+      <button class="key key-number" data-action="number" data-value="1">1</button>
+      <button class="key key-number" data-action="number" data-value="2">2</button>
+      <button class="key key-number" data-action="number" data-value="3">3</button>
+      <button class="key key-operator" data-action="operator" data-value="-">-</button>
+
+      <button class="key key-number" data-action="decimal" data-value=".">.</button>
+      <button class="key key-number" data-action="number" data-value="0">0</button>
+      <button class="key key-operator" data-action="operator" data-value="/">/</button>
+      <button class="key key-operator" data-action="operator" data-value="*">x</button>
+
+      <button class="key key-wide key-action" data-action="reset">RESET</button>
+      <button class="key key-wide key-equals" data-action="equals">=</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
